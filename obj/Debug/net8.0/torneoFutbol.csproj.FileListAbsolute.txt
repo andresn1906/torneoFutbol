@@ -7,7 +7,6 @@ C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\n
 C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\torneoFutbol.AssemblyInfoInputs.cache
 C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\torneoFutbol.AssemblyInfo.cs
 C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\torneoFutbol.csproj.CoreCompileInputs.cache
-C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\torneoFutbol.sourcelink.json
 C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\torneoFutbol.dll
 C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\refint\torneoFutbol.dll
 C:\Users\Violeta19\OneDrive\Escritorio\Programación\C#\torneoFutbol\obj\Debug\net8.0\torneoFutbol.pdb

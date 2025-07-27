@@ -7,6 +7,7 @@ internal class Program
 
         while (true)
         {
+            Console.Clear();
             Console.WriteLine("Bienvenido al sistema de gestión de torneos de fútbol.");
             uiModels.mainMenu();
 
@@ -30,7 +31,7 @@ internal class Program
                     uiModels.statsMenu();
                     break;
                 case "6":
-                    Console.WriteLine("Saliendo... ");
+                    Console.WriteLine("Saliendo del programa... ");
                     return;
                 default:
                     Console.WriteLine("Opción inválida, por favor intenta de nuevo.");

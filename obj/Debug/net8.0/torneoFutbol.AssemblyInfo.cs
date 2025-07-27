@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("torneoFutbol")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa78c93307070bfd34ecb8b201a8ca85a868c597")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbb6ac7c95cfa6ed455775b62aa0fcc63cde6292")]
 [assembly: System.Reflection.AssemblyProductAttribute("torneoFutbol")]
 [assembly: System.Reflection.AssemblyTitleAttribute("torneoFutbol")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
