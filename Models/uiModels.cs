@@ -11,16 +11,16 @@ namespace torneoFutbol
         {
         
         const string mainMenu = """
-        |-------------------------------------|
+        +-------------------------------------+
         |         ⚽ Menú Principal           |
-        |-------------------------------------|
+        +-------------------------------------+
         | 1. Administrar Torneo               |
         | 2. Registrar Equipo                 |
         | 3. Registrar Jugador                |
         | 4. Transferencias                   |
         | 5. Estadísticas                     |
         | 6. Salir                            |
-        |-------------------------------------|
+        +-------------------------------------+
 
         Por favor, elige una opción del menú principal: 
         """;
@@ -30,7 +30,7 @@ namespace torneoFutbol
         public static void tournamentMenu()
         {
             const string tournamentMenu = """
-        |-------------------------------------|
+        +-------------------------------------+
         |   🏆 Administrador de Torneos       |
         |-------------------------------------|
         | 1. Añadir Torneo                    |
@@ -38,7 +38,7 @@ namespace torneoFutbol
         | 3. Eliminar Torneo                  |
         | 4. Actualizar Torneo (Editar)       |
         | 5. Regresar a Menú Principal        |
-        |-------------------------------------|
+        +-------------------------------------+
 
         Por favor, elige una opción: 
         """;
@@ -50,7 +50,7 @@ namespace torneoFutbol
         public static void teamsMenu()
         {
             const string teamsMenu = """
-        |-------------------------------------|
+        +-------------------------------------+
         |   👥 Administrador de Equipos       |
         |-------------------------------------|
         | 1. Registrar equipo                 |
@@ -60,7 +60,7 @@ namespace torneoFutbol
         | 5. Notificación de Transferencia    |
         | 6. Salir de Torneo                  |    
         | 7. Regresar a Menú Principal        |    
-        |-------------------------------------|
+        +-------------------------------------+
 
         Por favor, elige una opción: 
         """;
@@ -71,15 +71,15 @@ namespace torneoFutbol
         public static void playersMenu()
         {
             const string playersMenu = """
-        |-------------------------------------|
+        +-------------------------------------+
         |   🏃 Administrador de Jugadores     |
-        |-------------------------------------|
+        +-------------------------------------+
         | 1. Registrar Jugador                |
         | 2. Buscar Jugador                   |
         | 3. Editar Jugador                   |
         | 4. Eliminar Jugador                 |
         | 5. Regresar a Menú Principal        |
-        |-------------------------------------|
+        +-------------------------------------+
 
         Por favor, elige una opción: 
         """;
@@ -89,13 +89,13 @@ namespace torneoFutbol
         public static void transferMenu()
         {
             const string transferMenu = """
-        |-------------------------------------------------|
+        +-------------------------------------------------+
         |   💰 Menú de Transferencias (Compra/Préstamo)   |
-        |-------------------------------------------------|
+        +-------------------------------------------------+
         | 1. Comprar Jugador                              |
         | 2. Prestar Jugador                              |
         | 3. Regresar a Menú Principal                    |
-        |-------------------------------------------------|
+        +-------------------------------------------------+
 
         Por favor, elige una opción: 
         """;
@@ -105,7 +105,7 @@ namespace torneoFutbol
         public static void statsMenu()
         {
             const string statsMenu = """
-        |-------------------------------------------------|
+        +-------------------------------------------------+
         |           📊 Menú de Estadísticas               |
         |-------------------------------------------------|
         | 1. Jugadores con más asistencias del torneo     |
@@ -113,7 +113,7 @@ namespace torneoFutbol
         | 3. Jugadores más caros por equipo               |
         | 4. Jugadores menores al promedio de edad        |
         | 5. Regresar a Menú Principal                    |
-        |-------------------------------------------------|
+        +-------------------------------------------------+
 
         Por favor, elige una opción: 
         """;
