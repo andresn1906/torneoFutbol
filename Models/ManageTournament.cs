@@ -24,49 +24,67 @@ namespace torneoFutbol
                     tournament.Id = int.Parse(Console.ReadLine() ?? "0");
                     
                     if (tournament.Id <= 0)
-                    {
-                        Console.WriteLine("❌ Id Inválido ");
-                        Console.ReadKey();
-                        return;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                    
-                    foreach (Tournament t in Tournament.tournaments)
-                    {
-                        if (t.Id == tournament.Id)
                         {
-                            Console.WriteLine("Ese Id ya está en uso. Por favor, elija otro.");
+                            Console.WriteLine("❌ Id Inválido ");
                             Console.ReadKey();
                             return;
                         }
-                    }
+                    else
+                        {
+                            continue;
+                        }
                     
+                    foreach (Tournament t in Tournament.tournaments)
+                        {
+                            if (t.Id == tournament.Id)
+                                {
+                                    Console.WriteLine("Ese Id ya está en uso. Por favor, elija otro.");
+                                    Console.ReadKey();
+                                    return;
+                                }
+                        }
+                        
                     Console.Write("Ingrese el nombre del torneo: ");
                     tournament.Name = Console.ReadLine();
                     
                     if (string.IsNullOrEmpty(tournament.Name))
-                    {
-                        Console.WriteLine("❌ El nombre del torneo no puede estar vacío.");
-                        Console.ReadKey();
-                        return;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                    
-                    foreach (Tournament t in Tournament.tournaments)
-                    {
-                        if (t.Name == tournament.Name)
                         {
-                            Console.WriteLine("Ese nombre ya está en uso. Por favor, elija otro.");
+                            Console.WriteLine("❌ El nombre del torneo no puede estar vacío.");
                             Console.ReadKey();
                             return;
                         }
-                    }
+                    else
+                        {
+                            continue;
+                        }
+                    
+                    foreach (Tournament t in Tournament.tournaments)
+                        {
+                            if (t.Name == tournament.Name)
+                                {
+                                    Console.WriteLine("Ese nombre ya está en uso. Por favor, elija otro.");
+                                    Console.ReadKey();
+                                    return;
+                                }
+                        }
+                    
+                    Console.Write("Ingrese el tipo de torneo que desea crear\n1-> Torneo local\n2->Torneo internacional ");
+                    string optionType = Console.ReadLine();
+                    
+                    if (optionType = "1")
+                        {
+                            tournament.Type = "Torneo local";
+                        }
+                    else if (optionType = "2")
+                        {
+                            tournament.Type = "Torneo internacional";
+                        }
+                    else
+                        {
+                            Console.WriteLine("❌ Opción inválida. Digite una opción correcta entre \"1\" y \"2\".");
+                            Console.ReadKey();
+                            return;
+                        }
                     
                     tournament.StartDate = DateTime.Now;
                     Console.WriteLine($"Se ha creado el torneo: \"{tournament.Name}\" con ID: \"{tournament.Id}\".");
@@ -77,9 +95,9 @@ namespace torneoFutbol
                     Console.WriteLine("Lista de Torneos:");
                     
                     foreach (Tournament t in Tournament.tournaments)
-                    {
-                        Console.WriteLine($"{t.ToString()}");
-                    }
+                        {
+                            Console.WriteLine($"{t.ToString()}");
+                        }
                     
                     Console.ReadKey();
                     Console.Clear();
@@ -93,17 +111,17 @@ namespace torneoFutbol
                     Tournament? foundTournament = Tournament.tournaments.FirstOrDefault(t => t.Id == searchId);
                     
                     if (foundTournament != null)
-                    {
-                        Console.WriteLine($"Torneo encontrado:\n{foundTournament.ToString()}");
-                        Console.ReadKey();
-                        Console.Clear();
-                    }
+                        {
+                            Console.WriteLine($"Torneo encontrado:\n{foundTournament.ToString()}");
+                            Console.ReadKey();
+                            Console.Clear();
+                        }
                     else
-                    {
-                        Console.WriteLine("❌ El torneo con ese ID no existe.");
-                        Console.ReadKey();
-                        return;
-                    }
+                        {
+                            Console.WriteLine("❌ El torneo con ese ID no existe.");
+                            Console.ReadKey();
+                            return;
+                        }
                     break;
 
                 case "3":
@@ -114,33 +132,32 @@ namespace torneoFutbol
                     Tournament? idEncontrado = Tournament.tournaments.Find(t => t.Id == eliminarId);
                     
                     if (idEncontrado != null)
-                    {
-                        while (true)
-                        {        
-                            Console.WriteLine("¿Está seguro de eliminarlo? (si/no)");
-                            string? eliminar = Console.ReadLine();
-                            
-                            if (eliminar?.ToLower() != "si")
-                            {
-                                Console.Clear();
-                                break;
-                            }
-                            else
-                            {
-                                Tournament.tournaments.Remove(idEncontrado);
-                                Console.WriteLine("El torneo ha sido eliminado.");
-                                Console.ReadKey();
-                                Console.Clear();
-                                break;
-                            }
+                        {
+                            while (true)
+                                {        
+                                    Console.WriteLine("¿Está seguro de eliminarlo? (s/n )");
+                                    string? eliminar = Console.ReadLine();
+                                    if (eliminar?.ToLower() != "s")
+                                        {
+                                            Console.Clear();
+                                            break;
+                                        }
+                                    else
+                                        {
+                                            Tournament.tournaments.Remove(idEncontrado);
+                                            Console.WriteLine("El torneo ha sido eliminado.");
+                                            Console.ReadKey();
+                                            Console.Clear();
+                                            break;
+                                        }
+                                }
                         }
-                    }
                     else
-                    {
-                        Console.WriteLine("❌ El torneo con ese ID no existe.");
-                        Console.ReadKey();
-                        return;
-                    }
+                        {
+                            Console.WriteLine("❌ El torneo con ese ID no existe.");
+                            Console.ReadKey();
+                            return;
+                        }
                     break;
                     
                 case "4":
@@ -151,32 +168,31 @@ namespace torneoFutbol
                     Tournament? Encontrado = Tournament.tournaments.Find(t => t.Id == idActualizar);
                     
                     if (Encontrado != null)
-                    {
-                        Console.WriteLine($"Torneo: {Encontrado.Name}");
-                        Console.WriteLine("Ingrese el nuevo nombre del torneo: ");
-                        string? newName = Console.ReadLine();
-                        
-                        if (Tournament.tournaments.Any(t => t.Name == newName))
                         {
-                            Console.WriteLine("Ese nombre ya está en uso. ");
-                            Console.ReadKey();
-                            return;
+                            Console.WriteLine($"Torneo: {Encontrado.Name}");
+                            Console.WriteLine("Ingrese el nuevo nombre del torneo: ");
+                            string? newName = Console.ReadLine();
+                            if (Tournament.tournaments.Any(t => t.Name == newName))
+                                {
+                                    Console.WriteLine("Ese nombre ya está en uso. ");
+                                    Console.ReadKey();
+                                    return;
+                                }
+                            else
+                                {
+                                    Encontrado.Name = newName;
+                                    Console.WriteLine("Nombre actualizado con éxito. ");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                }
                         }
-                        else
+                    else
                         {
-                            Encontrado.Name = newName;
-                            Console.WriteLine("Nombre actualizado con éxito. ");
+                            Console.WriteLine("❌ El torneo con ese ID no se ha encontrado.");
                             Console.ReadKey();
                             Console.Clear();
+                            break;
                         }
-                    }
-                    else
-                    {
-                        Console.WriteLine("❌ El torneo con ese ID no se ha encontrado.");
-                        Console.ReadKey();
-                        Console.Clear();
-                        break;
-                    }
                     break;
 
                 case "5":
