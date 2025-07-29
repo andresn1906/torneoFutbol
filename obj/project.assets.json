@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Violeta19\\OneDrive\\Escritorio\\Programación\\C#\\torneoFutbol\\torneoFutbol.csproj",
+      "projectUniqueName": "C:\\Users\\Violeta19\\torneoFutbol\\torneoFutbol.csproj",
       "projectName": "torneoFutbol",
-      "projectPath": "C:\\Users\\Violeta19\\OneDrive\\Escritorio\\Programación\\C#\\torneoFutbol\\torneoFutbol.csproj",
+      "projectPath": "C:\\Users\\Violeta19\\torneoFutbol\\torneoFutbol.csproj",
       "packagesPath": "C:\\Users\\Violeta19\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Violeta19\\OneDrive\\Escritorio\\Programación\\C#\\torneoFutbol\\obj\\",
+      "outputPath": "C:\\Users\\Violeta19\\torneoFutbol\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Violeta19\\AppData\\Roaming\\NuGet\\NuGet.Config"

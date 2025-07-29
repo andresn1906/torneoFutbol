@@ -14,9 +14,9 @@ namespace torneoFutbol
             +-------------------------------------+
             |         ⚽ Menú Principal           |
             +-------------------------------------+
-            | 1. Administrar Torneo               |
-            | 2. Registrar Equipo                 |
-            | 3. Registrar Jugador                |
+            | 1. Administrar Torneos              |
+            | 2. Registrar Equipos                |
+            | 3. Registrar Jugadores              |
             | 4. Transferencias                   |
             | 5. Estadísticas                     |
             | 6. Salir                            |
@@ -35,7 +35,7 @@ namespace torneoFutbol
             |   🏆 Administrador de Torneos       |
             |-------------------------------------|
             | 1. Añadir Torneo                    |
-            | 2. Buscar Torneo                    |
+            | 2. Buscar Torneo(s)                 |
             | 3. Eliminar Torneo                  |
             | 4. Actualizar Torneo (Editar)       |
             | 5. Regresar a Menú Principal        |

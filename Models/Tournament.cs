@@ -9,16 +9,17 @@ namespace torneoFutbol
     {
         public int Id { get; set; }
         public string? Name { get; set; }
-        public string? COuntry { get; set; }
-        public DateTime StartDate { get; set; } = DateTime.Now;
-        public DateTime EndDate { get; set; }
+        public string? Country { get; set; }
+        public DateOnly StartDate { get; set; }
+        public DateOnly EndDate { get; set; }
         public string? Type { get; set; }
         
-        public Tournament(int id, string name, string country, DateTime startdate, DateTime enddate, string type)
+        public Tournament(int id, string name, string country, DateOnly startdate, DateOnly enddate, string type)
         {
             Id = id;
             Name = name;
             Country = country;
+            StartDate = startdate;
             EndDate = enddate;
             Type = type;
         }
@@ -28,12 +29,13 @@ namespace torneoFutbol
         public override string ToString()
         {
             return $"""
-            Torneo: {Name}
+            Torneo: "{Name}"
             ID: {Id}
-            País: {Country}
-            Tipo de torneo: {Type}
+            País: "{Country}"
+            Tipo de torneo: "{Type}"
             Fecha de inicio: {StartDate.ToShortDateString()}
             Fecha de finalización: {EndDate.ToShortDateString()}
+            Registro del torneo: {DateTime.Now.ToShortDateString()}
             """;
         }
         
